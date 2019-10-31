@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 Transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+		<title>生鲜超市</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="css/public.css" type="text/css" rel="stylesheet" />
+		<link href="css/show.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/slide.js"></script>
+		<script type="text/javascript" src="js/jquery.imagezoom.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	</head>
+	<style>
+		
+	</style>
+	<script>
+		$(function(){
+        $('.nav ul li').hover(function(){
+            $(this).children(".details").show();
+        },function(){
+            $(this).children(".details").hide();
+        });
+        $('#my').hover(function(){
+            $(this).find("div").show();
+        },function(){
+            $(this).find("div").hide();
+        });
+		$(".jqzoom").imagezoom();
+		$('#scroll').owlCarousel({
+		    items: 4,
+		    autoPlay: false,
+		    navigation: true,
+		    navigationText: ["",""],
+		     scrollPerPage: true
+		});
+
+    });
+</script>
+	<body>
+		<!--------------logo搜索------------->
+		<div class="wt1080 header">
+			<div class="logo fl">
+				<a href="index.html">
+					<h1 style="font-size: 48px;color:#ff9900;">生鲜超市</h1>
+				</a>
+			</div>
+			<div class="search fl">
+				<div>
+					<input name="search" type="text" class="a_search fl" placeholder="请输入关键字">
+					<a href="sousuo.html"><span class="b_search fl"></span></a>
+					<div class="clear"></div>
+				</div>
+				<p>
+					<a href="#" class="current">海鲜</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="#">蔬菜</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="#">水果</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="#">熟食</a>
+				</p>
+			</div>
+			<a class="my_shop fr" href="gouwuche.html">我的购物车<span>4</span></a>
+			<div class="login_btn" style="margin-left: 5%;">
+				<a href="login.html">登录</a>
+			</div>
+			<div class="login_btn">
+				<a href="regist.html">注册</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--------------导航------------------>
+		<div class="nav">
+			<div class="wt1080">
+				<ul>
+					<li>
+						<a href="index.html"><span>首页</span></a>
+					</li>
+					<li>
+						<a href="liebiaohaixian.html"class="current"><span>海鲜专区</span></a>
+						<div class="details">
+							<div class="item">
+								<p class="title"><a href="liebiao.html">大龙虾</a></p>
+								<div class="ctgnamebox">
+									<a href="liebiaohaixian.html" class="current">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+								</div>
+							</div>
+							<div class="item">
+								<p class="title"><a href="liebiao.html">大龙虾</a></p>
+								<div class="ctgnamebox">
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+									<a href="liebiaohaixian.html">大龙虾</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="liebiaoshuiguo.html"><span>进口水果</span></a></li>
+					<li><a href="liebiaoroulei.html"><span>精选肉类</span></a></li>
+					<li><a href="liebiaoshucai.html"><span>新鲜蔬菜</span></a></li>
+					<li><a href="liebiaogulei.html"><span>粮油杂货</span></a></li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+		<!---------------------导航完--------------------->
+
+		<script type="text/javascript" src="js/jquery.imagezoom.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		<div class="wt1080">
+			<!----------------位置--------------------->
+			<div class="place">
+				当前位置：<span class="check">海鲜专区</span>
+			</div>
+			<!-------------商品详细----------------->
+			<div class="property">
+				<div class="left">
+					<div class="left_top">
+						<img src="image/binghaixian.jpg" class="jqzoom">
+						<a href="#" class="search"></a>
+					</div>
+					<div class="pics">
+						<div id="scroll" class="owl-carousel">
+							<a href="#" class="item"><img src="image/binghaixian.jpg"></a>
+							<a href="#" class="item"><img src="image/binghaixian.jpg"></a>
+							<a href="#" class="item"><img src="image/binghaixian.jpg"></a>
+							<a href="#" class="item"><img src="image/binghaixian.jpg"></a>
+							<a href="#" class="item"><img src="image/binghaixian.jpg"></a>
+							<a href="#" class="item"><img src="image/binghaixian.jpg"></a>
+							<a href="#" class="item"><img src="image/binghaixian.jpg"></a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="right">
+					<a href="#" class="title">海鲜干货</a>
+					<div class="aa">
+						<span class="a">促销价</span>
+						<span class="b">￥485.00</span>
+						<span class="c">6.5折</span>
+						<span class="c">包邮</span>
+						<span class="d">国内参考价 ￥688.00</span>
+					</div>
+					<table>
+						<tr>
+							<td class="one">运费</td>
+							<td>免运费</td>
+						</tr>
+						<tr>
+							<td class="one">关税</td>
+							<td>本商品实用税率为10%，若订单关税<50元则免征</td> </tr> <tr>
+							<td class="one">数量</td>
+							<td>
+								<div class="change">
+									<span class="zuo">-</span>
+									<input name="" type="text" value="1">
+									<span class="you">+</span>
+								</div>
+								<span class="tishi">库存充足</span>
+							</td>
+						</tr>
+					</table>
+					<!-----------------购买按钮--------------->
+					<div class="shopping">
+						<a href="gouwuche.html" class="buy">立即购买</a>
+						<a href="gouwuche.html" class="shop_car">加入购物车</a>
+						<div class="clear"></div>
+					</div>
+					<!-----------保障---------------->
+					<div class="b_baozhang">
+						<ul>
+							<li>
+								<img src="image/u1.png">
+								<p>质量货源</p>
+							</li>
+							<li>
+								<img src="image/u2.png">
+								<p>安全第一</p>
+							</li>
+							<li>
+								<img src="image/u3.png">
+								<p>国家认证</p>
+							</li>
+							<li>
+								<img src="image/u4.png">
+								<p>健康营养</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!----------------详情----------------->
+			<div class="xiangxi" style="width: 70%;float: left;text-align: center;">
+				<img src="image/binghaixian.jpg" style="width: 60%;height: 80%;margin-top: 10%;">
+				<p style="font-size: 30px;">新鲜海鲜</p>
+				<img src="image/binghaixian.jpg" style="width: 60%;height: 80%;margin-top: 10%;">
+				<p style="font-size: 30px;">新鲜海鲜</p>
+			</div>
+			<div class="details_right">
+				<div class="d_r_t">推荐</div>
+				<div class="d_r_d">
+					<ul>
+						<li>
+							<a href="#"><img src="image/xigua.jpg"></a>
+							<p><a href="#">新疆西瓜</a></p>
+							<p><span>￥<font>39.00</font></span> 5.2折</p>
+						</li>
+						<li>
+							<a href="#"><img src="image/xigua.jpg"></a>
+							<p><a href="#">新疆西瓜</a></p>
+							<p><span>￥<font>39.00</font></span> 5.2折</p>
+						</li>
+						<li>
+							<a href="#"><img src="image/xigua.jpg"></a>
+							<p><a href="#">新疆西瓜</a></p>
+							<p><span>￥<font>39.00</font></span> 5.2折</p>
+						</li>
+						<li>
+							<a href="#"><img src="image/xigua.jpg"></a>
+							<p><a href="#">新疆西瓜</a></p>
+							<p><span>￥<font>39.00</font></span> 5.2折</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!---------------------保障------------------->
+		<div class="baozhang">
+			<div class="wt1080">
+				<ul>
+					<li>
+						<img src="image/c1.png">
+						<p>质量货源</p>
+					</li>
+					<li>
+						<img src="image/c2.png">
+						<p>安全第一</p>
+					</li>
+					<li>
+						<img src="image/c3.png">
+						<p>国家认证</p>
+					</li>
+					<li>
+						<img src="image/c5.png">
+						<p>健康营养</p>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!---------------底部--------------->
+		<div class="footer">
+			<div class="wt1080" style="position: relative">
+				<div class="a_footer">
+					<div class="left">
+						<a href="index.html">
+							<h1 style="font-size: 48px;color:#ff9900;">生鲜超市</h1>
+						</a>
+						<p class="lianxi">
+							<a href="#"><img src="image/weixin.png"></a>
+							<a href="#"><img src="image/weibo.png"></a>
+							<a href="#"><img src="image/QQ.png"></a>
+							<span>000-0000-0000</span>
+						</p>
+					</div>
+					<div class="right">
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="#">新手指南</a></dt>
+									<dd><a href="#">购物流程</a></dd>
+									<dd><a href="#">支付方式</a></dd>
+									<dd><a href="#">通关关税</a></dd>
+									<dd><a href="#">常见问题</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">新手指南</a></dt>
+									<dd><a href="#">购物流程</a></dd>
+									<dd><a href="#">支付方式</a></dd>
+									<dd><a href="#">通关关税</a></dd>
+									<dd><a href="#">常见问题</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">新手指南</a></dt>
+									<dd><a href="#">购物流程</a></dd>
+									<dd><a href="#">支付方式</a></dd>
+									<dd><a href="#">通关关税</a></dd>
+									<dd><a href="#">常见问题</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">新手指南</a></dt>
+									<dd><a href="#">购物流程</a></dd>
+									<dd><a href="#">支付方式</a></dd>
+									<dd><a href="#">通关关税</a></dd>
+									<dd><a href="#">常见问题</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="weixin"><img src="image/weixin1.png">
+					<p style="text-align: center;margin-top: 5%;">扫描二维码关注</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

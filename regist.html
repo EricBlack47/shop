@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 Transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+		<title>生鲜超市</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="css/login.css" type="text/css" rel="stylesheet" />
+		<link href="css/public.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	</head>
+	<style type="text/css">
+
+	</style>
+	<body>
+		<!---------------头部----------------->
+		<div class="wt1080 top">
+			<div class="logo"><a href="#"><img src="image/logo.png"></a></div>
+			<div class="logo fl">
+				<a href="index.html">
+					<h1 style="font-size: 48px;color:#ff9900;">生鲜超市&nbsp;|&nbsp;<span style="font-size: 30px;">注册</span></h1>
+				</a>
+			</div>
+			<div class="rr">
+				<ul>
+					<li>
+						<img src="image/bg3.png">
+						<p>质量货源</p>
+					</li>
+					<li>
+						<img src="image/bg5.png">
+						<p>安全第一</p>
+					</li>
+					<li>
+						<img src="image/bg4.png">
+						<p>国家认证</p>
+					</li>
+					<li>
+						<img src="image/bg6.png">
+						<p>健康营养</p>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!----------------------中间------------------------->
+		<div class="red">
+			<div class="wt1080 login">
+				<div class="l_k">
+					<div class="l_k_t">
+						<span class="one">注册</span>
+						<span class='two'>已有帐号？<a href="login.html">去登陆</a></span>
+					</div>
+					<!-----------登录框----------->
+					<div class="l_k_d">
+						<input type="text" class="admin" id="phone_num" placeholder="邮箱/手机/用户名">
+						<input type="password" class="pass" id="pass" placeholder="密码">
+						<input type="password" class="pass" id="check_pass" placeholder="确认密码">
+					</div>
+					<input type="submit" class="s_login" value="马上注册" style="margin-top: 10%;">
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-------------------底部------------------------>
+		<div class="foot wt1080">
+			<ul>
+				<li><a href="#">网站简介</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">招商合作</a></li>
+				<li><a href="#">销售联盟</a></li>
+			</ul>
+		</div>
+		<script src="js/jquery-1.7.2.min.js" type="text/jscript"></script>
+		<script>
+			$(function(){
+				$(".s_login").click(function(){
+					var phone = $("#phone_num").val()
+					var password = $("#pass").val()
+					var check_pass = $('#check_pass').val()
+					
+					if(phone == ""){
+						alert("请输入用户名或手机号！")
+					}
+					
+					if(password ==""){
+						alert("请输入密码")
+					}
+					
+					if(check_pass ==""){
+						alert("请确认密码")
+					}
+					
+					if(check_pass != password){
+						alert("两次密码不一致")
+					}
+					
+					if(phone !=""&&password !="" &&check_pass!=""){
+						alert("注册成功！")
+						window.location.href ="login.html"
+					}
+				})
+			})
+		</script>
+
+	</body>
+</html>
